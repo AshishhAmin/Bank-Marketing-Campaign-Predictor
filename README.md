@@ -7,7 +7,7 @@ This project deploys a machine learning model for predicting bank marketing camp
 - **Source**: Portuguese Banking Institution
 - **Size**: 49,732 records with 16 features
 - **Target**: Term deposit subscription (binary classification)
-- **Model Performance**: 84.29% accuracy with Random Forest
+- **Model Performance**: 87.62% accuracy with Random Forest
 
 ## 🚀 Quick Start
 
@@ -37,21 +37,6 @@ streamlit run banking_streamlit_app.py
 2. Visit [share.streamlit.io](https://share.streamlit.io)
 3. Connect repository and deploy
 
-## 📁 Project Structure
-```
-banking-streamlit-app/
-├── banking_streamlit_app.py    # Main Streamlit application
-├── banking_model.pkl           # Trained ML model (add this)
-├── requirements.txt            # Python dependencies
-├── README.md                   # This file
-├── data/                       # Data files (optional)
-│   ├── train.csv
-│   ├── test.csv
-│   └── bank-full.csv
-└── notebooks/                  # Original notebook (optional)
-    └── Banking-Dataset-Marketing-Targets.ipynb
-```
-
 ## 🎯 Features
 - **Interactive Interface**: 16 input features with user-friendly widgets
 - **Real-time Predictions**: Instant classification with confidence scores
@@ -65,30 +50,4 @@ banking-streamlit-app/
 - **Preprocessing**: OneHotEncoder for categorical features
 - **Features**: Age, job, marital status, education, balance, loans, campaign data
 
-## 🛠️ Troubleshooting
 
-### Common Issues
-1. **Model loading errors**: Ensure `banking_model.pkl` is in the same directory
-2. **Import errors**: Check all dependencies in `requirements.txt`
-3. **Deployment failures**: Verify GitHub repository structure
-
-### Getting Help
-- Check Streamlit documentation: [docs.streamlit.io](https://docs.streamlit.io)
-- Review deployment logs in Streamlit Community Cloud
-- Ensure all files are properly committed to GitHub
-
-## 📋 Input Features
-1. **Personal**: Age, job, marital status, education
-2. **Financial**: Balance, default status, housing loan, personal loan
-3. **Campaign**: Contact type, day, month, duration
-4. **Previous**: Campaign contacts, days since contact, previous outcome
-
-## 🎨 Customization
-Modify the app by editing `banking_streamlit_app.py`:
-- Update styling in the CSS section
-- Add new visualizations
-- Modify input widgets
-- Change color schemes and layout
-
-## 📞 Contact
-For questions about this deployment, refer to the original notebook or create an issue in this repository.
